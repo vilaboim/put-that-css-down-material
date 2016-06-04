@@ -1,0 +1,37 @@
+/* ITERATION */
+
++prefix-classes('col-')
+    for num in 1..12
+        .xs-{num}
+        .md-{num}
+        .sm-{num}
+        .lg-{num}
+            width ( 100% / 12 ) * num
+
+    for num in 1..12
+        .xs-offset-{num}
+        .md-offset-{num}
+        .sm-offset-{num}
+        .lg-offset-{num}
+            margin-left  ( 100% / 12 ) * num
+
+/* With Mixins */
+flex-basis(val)
+    -moz-flex-basis    val
+    -webkit-flex-basis val
+    flex-basis         val
+
+for num in 1..12
+    .col-xs-{num}
+        flex-basis(( 100% / 12 ) * num)
+
+/* Another with Mixins */
+icon-classes = fb-icon insta-icon twitter-icon
+
+icons(className)
+    li.{className}
+        background-image url(className'.png')
+
+ul.icons
+    for num in 0..length(icon-classes) - 1
+        icons(icon-classes[num])

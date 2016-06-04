@@ -1,0 +1,28 @@
+{
+  "name": "palestra-put-that-css-down-material",
+  "version": "1.0.0",
+  "description": "Material da palestra Put That CSS Down, NOW!",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "gulp-stylus": "^2.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilaboim/palestra-put-that-css-down-material.git"
+  },
+  "author": "Lucas Vilaboim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vilaboim/palestra-put-that-css-down-material/issues"
+  },
+  "homepage": "https://github.com/vilaboim/palestra-put-that-css-down-material#readme"
+}

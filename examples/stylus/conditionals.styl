@@ -1,0 +1,34 @@
+/* CONDITIONALS */
+
+black-friday = true
+
+body
+    if black-friday is true
+        color white
+        background black
+    else
+        color black
+        background white
+
+/* With mixins */
+flex-justify(val)
+    -webkit-justify-content val
+    justify-content         val
+
+    if val is 'space-around'
+        -ms-flex-pack distribute
+    else if val is 'flex-end'
+        -ms-flex-pack end
+    else if val is 'space-between'
+        -ms-flex-pack justify
+    else
+        -ms-flex-pack val
+
+.banners
+    flex-justify(space-around)
+
+.container
+    flex-justify(space-between)
+
+.footer
+    flex-justify(center)

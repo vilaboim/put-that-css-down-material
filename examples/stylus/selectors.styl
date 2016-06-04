@@ -1,0 +1,30 @@
+/* SELECTORS */
+
+/* Indentation */
+body
+  color white
+
+textarea
+input
+    border 1px solid #EEE
+
+/* Parent  Reference */
+textarea
+input
+    color #A7A7A7
+
+    &:hover
+        color #000
+
+.menu
+    border 2px #f00 solid
+
+    .home &
+        border 2px #000 solid
+
+/* Partial Reference */
+.list
+    list-style none
+
+    &__item
+        text-decoration underline

@@ -1,0 +1,40 @@
+/* MIXINS */
+
+flex()
+    display -ms-flexbox
+    display -webkit-flex
+    display flex
+
+.container
+    flex()
+
+/* Block Mixins */
+placeholder(element)
+    {element}::-webkit-input-placeholder
+        {block}
+
+    {element}::-moz-placeholder
+        {block}
+
+    {element}:-ms-input-placeholder
+        {block}
+
+    {element}:-moz-placeholder
+        {block}
+
++placeholder(input)
+    color      #ccc
+    font-style italic
+
+/* Mixins in Mixins */
+listItem()
+    text-decoration underline
+
+list()
+    list-style none
+
+    > li
+        listItem()
+
+ul
+    list()

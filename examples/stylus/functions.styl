@@ -1,0 +1,32 @@
+/* FUNCTIONS */
+
+grid-col(n)
+    ( 100% / 12 ) * n
+
+.sidebar
+    width grid-col(3)
+
+.article
+    width grid-col(9)
+
+/* Function bodies */
+inner-rad(b, p)
+    b = unit(b, px)
+    p = unit(p, px)
+    b - p
+
+.button
+    padding 15px
+    border-radius 20px
+
+    .button-inner
+        border-radius inner-rad(@border-radius, 15px)
+
+/* Multiple Return Values */
+padd(width, height)
+    width / 10 height / 10
+
+.container
+    width   150px
+    height  100px
+    padding padd(@width, @height)
