@@ -1,22 +1,26 @@
 /* VARIABLES */
+/* http://stylus-lang.com/docs/variables.html */
 
 font-size     = 1.4em
-font-family   = "Open Sans", Arial, sans-serif
+font          = font-size "Open Sans", Arial
 primary-color = #ccc
 
+
 body
-    font  font-size font-family
+    font  font, sans-serif
     color primary-color
 
 /* Property Lookup */
-.logo
-    position    absolute
-    top         50%
-    left        50%
-    width       150px
-    height      80px
-    margin-left -(@width / 2)
-    margin-top  -(@height / 2)
+.header
+    width 150px
+
+    .logo
+        position    absolute
+        top         50%
+        left        50%
+        height      80px
+        margin-left -(@width / 2)
+        margin-top  -(@height / 2)
 
 /* Conditional properties */
 position()

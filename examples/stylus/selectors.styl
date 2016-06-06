@@ -1,4 +1,5 @@
 /* SELECTORS */
+/* http://stylus-lang.com/docs/selectors.html */
 
 /* Indentation */
 body
@@ -9,12 +10,15 @@ input
     border 1px solid #EEE
 
 /* Parent  Reference */
-textarea
-input
-    color #A7A7A7
+.btn
+a.btn
+    color #a7a7a7
 
     &:hover
         color #000
+
+    > span
+        font-size 10px
 
 .menu
     border 2px #f00 solid

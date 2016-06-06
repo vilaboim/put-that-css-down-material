@@ -1,4 +1,5 @@
 /* FUNCTIONS */
+/* http://stylus-lang.com/docs/functions.html */
 
 grid-col(n)
     ( 100% / 12 ) * n
@@ -29,4 +30,4 @@ padd(width, height)
 .container
     width   150px
     height  100px
-    padding padd(@width, @height)
+    padding padd(@height, @width)

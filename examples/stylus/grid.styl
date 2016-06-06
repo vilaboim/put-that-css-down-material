@@ -1,0 +1,15 @@
+/* BOOTSTRAP GRID */
+
++prefix-classes('col-')
+    for num in 1..12
+        .xs-{num}
+        .sm-{num}
+        .md-{num}
+        .lg-{num}
+            width ( 100% / 12 ) * num
+
+        .xs-offset-{num}
+        .sm-offset-{num}
+        .md-offset-{num}
+        .lg-offset-{num}
+            margin-left ( 100% / 12 ) * num

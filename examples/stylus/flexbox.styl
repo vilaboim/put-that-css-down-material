@@ -1,0 +1,23 @@
+/* FLEXBOX */
+
+flex()
+    display -ms-flexbox
+    display -webkit-flex
+    display flex
+
+justify(val)
+    -webkit-justify-content val
+    justify-content val
+
+    if val is space-around
+        -ms-flex-pack distribute
+    else
+        -ms-flex-pack val
+
+.container
+    flex()
+    justify(space-around)
+
+.footer
+    flex()
+    justify(center)
